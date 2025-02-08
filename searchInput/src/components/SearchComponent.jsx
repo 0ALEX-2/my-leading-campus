@@ -272,7 +272,7 @@ const cache = new LRUCache(10);
 const SearchComponent = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedTerm, setDebouncedTerm] = useState("");
-  console.log(cache, "cache");
+
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedTerm(searchTerm);
